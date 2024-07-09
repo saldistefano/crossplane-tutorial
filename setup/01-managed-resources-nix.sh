@@ -36,7 +36,7 @@ kind create cluster
 
 echo "## Which Hyperscaler do you want to use?" | gum format
 
-HYPERSCALER=$(gum choose "google" "aws" "azure")
+HYPERSCALER=$(gum choose "aws")
 
 echo "export HYPERSCALER=$HYPERSCALER" >> .env
 
